@@ -1,0 +1,17 @@
+﻿using Core.Entity.Abstract;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entity.Entities
+{
+    public class TaskHistory : IEntity
+    {
+        public int TaskHistoryId { get; set; }
+        public int TaskId { get; set; }
+        public int EmployeeId { get; set; }
+        public DateTime TaskDate { get; set; }
+    }
+}
